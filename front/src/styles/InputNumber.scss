@@ -1,0 +1,63 @@
+.InputNumberComponent {
+  appearance: textfield;
+  &::-webkit-inner-spin-button,
+  &::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  border: none;
+  background-color: transparent;
+  font-size: 32px;
+  color: white;
+  padding: 0;
+  margin: 0;
+  outline: none;
+  font-weight: 600;
+  max-width: 200px;
+  font-family: "Inter", sans-serif;
+
+  @media screen and (min-width: 1280px) {
+    max-width: 350px;
+  }
+
+  @media screen and (max-width: 380px) {
+    width: 160px;
+    font-size: 30px;
+  }
+}
+
+.custom_tolerance {
+  padding: 14px 24px;
+  background-color: #181819;
+  border-radius: 18px;
+  color: #7c7c82;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  display: flex;
+  align-items: center;
+  appearance: textfield;
+  flex-grow: 1;
+
+  &::-webkit-inner-spin-button,
+  &::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  @media screen and (max-width: 415px) {
+    width: 160px;
+    font-size: 14px;
+  }
+}
+
+.custom_tolerance::placeholder {
+  color: #7c7c82;
+}
+
+.custom_tolerance:after {
+  content: "%";
+  margin-left: 10px;
+  font-size: 16px;
+  color: #7c7c82;
+}

@@ -1,0 +1,44 @@
+.token-item {
+  border-radius: 24px;
+  border: 1px solid transparent;
+  padding: 8px 12px 8px 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  background-color: #37373c;
+  // cursor: pointer;
+}
+
+.token-item:hover {
+  border-color: #146df1;
+  background-color: transparent;
+}
+
+.token-list-component:hover {
+  background-color: #37373c;
+}
+
+.custom-scrollbar-modal::-webkit-scrollbar {
+  width: 13px;
+}
+
+.custom-scrollbar-modal::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.custom-scrollbar-modal::-webkit-scrollbar-thumb {
+  background: #9fc3f9;
+  border-radius: 10px;
+}
+
+.custom-scrollbar-modal::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.swap-button:disabled {
+  background-color: #146df1 !important;
+  color: white !important;
+  border: unset !important;
+  opacity: 0.5;
+}

@@ -1,0 +1,94 @@
+#root {
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.token-img-24 {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+}
+
+.ant-modal-root .ant-modal {
+  margin: 0;
+}
+
+.ant-dropdown .ant-dropdown-menu.hello {
+  width: 197px;
+}
+
+.ant-dropdown .ant-dropdown-menu {
+  width: 245px;
+  border: 1px solid #37373c;
+}
+
+.ant-segmented.ant-segmented-lg .ant-segmented-item {
+  border-radius: 14px;
+}
+
+.ant-menu-light.ant-menu-horizontal > .ant-menu-item-selected {
+  font-weight: 600;
+}
+
+.ant-menu-light .ant-menu-submenu-selected > .ant-menu-submenu-title {
+  font-weight: 600;
+}
+
+.ant-menu-submenu-popup
+  .ant-menu-vertical.ant-menu-sub:not([class*="-active"]) {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 14px;
+}
+
+.bridge-class .ant-menu.ant-menu-sub.ant-menu-vertical {
+  width: 600px !important;
+  display: flex;
+  flex-wrap: wrap;
+}
+.bridge-class .ant-menu.ant-menu-sub.ant-menu-vertical > li {
+  width: 31.32%;
+}
+
+.ant-menu-light.ant-menu-horizontal > .ant-menu-item-selected::after {
+  border-bottom-color: #146df1;
+}
+.ant-menu-light.ant-menu-horizontal > .ant-menu-submenu-selected::after {
+  border-bottom-color: #146df1;
+}
+
+@media (max-width: 440px) {
+  .ant-segmented.ant-segmented-lg {
+    width: 100%;
+  }
+  .ant-segmented-item {
+    flex: 1;
+  }
+}
