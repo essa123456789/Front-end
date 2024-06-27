@@ -1,6 +1,7 @@
 import React from 'react';
 import {  Flex, Layout } from 'antd';
 import Navbar from './Navbar';
+import { Outlet } from 'react-router-dom';
 
 const { Footer, Content } = Layout;
 const contentStyle: React.CSSProperties = {
@@ -26,7 +27,7 @@ const layoutStyle: React.CSSProperties = {
 const constainerStyle: React.CSSProperties = {
   width: '100%',
   justifyContent: "center",
-  color:"black"
+  color:"black",
 }
 
 interface Props {
@@ -37,7 +38,7 @@ const Pagelayout= ({children}:Props ) => (
   <Flex style={constainerStyle}>
     <Layout style={layoutStyle}>
       <Navbar/>
-      <Content style={contentStyle}>{children}</Content>
+      <Content style={contentStyle}>{children}<Outlet /></Content>
       <Footer style={footerStyle}>Footer</Footer>
     </Layout>
   </Flex>
