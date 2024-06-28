@@ -1,12 +1,16 @@
 import React from 'react'
 import Hero from '../Components/Hero'
+import Ltestgems from '../Components/Ltestgems'
 
-type Props = {}
 
-const Home = (props: Props) => {
+
+
+const Home = () => {
   return (
     <div>
         <Hero/>
+        <Ltestgems/>
+        
     </div>
   )
 }

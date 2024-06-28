@@ -28,6 +28,7 @@ const constainerStyle: React.CSSProperties = {
   width: '100%',
   justifyContent: "center",
   color:"black",
+  maxHeight:"100%"
 }
 
 interface Props {
@@ -39,7 +40,7 @@ const Pagelayout= ({children}:Props ) => (
     <Layout style={layoutStyle}>
       <Navbar/>
       <Content style={contentStyle}>{children}<Outlet /></Content>
-      <Footer style={footerStyle}>Footer</Footer>
+      
     </Layout>
   </Flex>
 );

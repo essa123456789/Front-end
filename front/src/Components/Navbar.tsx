@@ -46,10 +46,10 @@ const Navbar: React.FC<Props> = () => {
           </div>
         </Flex>
       </div>
-      <div style={{ position: 'relative', display: 'inline-block', width: '237px', height: '54px' }}>
-        <Button style={{ width: "100%", height: "100%", border: "0.5px solid #262626", padding: "5px", gap: "10px", color: "white", background: "#262626" }}></Button>
-        <img src={wallet} alt="wallet" style={{ position: 'absolute', top: '0', left: '0', width: '100%', height: '100%', pointerEvents: 'none' }} />
-      </div>
+      
+        <Button style={{ border: "0.5px solid #262626", color: "white", background: "#262626",width: '227px', height: '44px' }}>Button</Button>
+        
+      
         
     </Flex>
   );
